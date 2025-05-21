@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="static/images/logo.png">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">寢具家飾</a>
+                            <ul>
+                                <li><a href="usacotton.html">美國純棉</a></li>
+                                <li><a href="tencellyocell.html">天絲纖維</a></li>
+                                <li><a href="pillow.html">真枕好眠</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:;">窗簾窗飾</a>
+                            <ul>
+                                <li><a href="rollscreen.html">柔絲簾</a></li>
+                                <li><a href="rollscreen2.html">調光簾</a></li>
+                                <li><a href="venetianblind.html">百葉簾</a></li>
+                                <li><a href="curtains1.html">蛇簾</a></li>
+                                <li><a href="curtains2.html">三摺簾</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:;">家具床墊</a>
+                            <ul>
+                                <li><a href="bedroom.html">實木床組</a></li>
+                            </ul>
+                        </li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+.custom-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  z-index: 1000;
+}
+.custom-nav button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+</style>
+
+
+<style>
+.owl-carousel .custom-owl-btn {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.owl-carousel .custom-owl-btn i {
+  font-size: 24px;
+  color: #333;
+}
+</style>
+
+
+<style>
+.owl-carousel .owl-nav button {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel .owl-nav i {
+  font-size: 24px;
+  color: #333;
+  pointer-events: none;
+}
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 10px !important;
+    width: auto !important;
+    height: auto !important;
+    color: #000;
+    font-size: 28px;
+}
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.owl-carousel .owl-nav button {
+    pointer-events: auto;
+}
+
+/* 修正箭頭圖示未垂直置中 */
+.owl-carousel .owl-nav button img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SyncoHouse</title>
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/font-awesome.css">
+  <link rel="stylesheet" href="static/css/templatemo-hexashop.css">
+  <link rel="stylesheet" href="static/css/owl-carousel.css">
+  <link rel="stylesheet" href="static/css/lightbox.css">
+
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- Lightbox2 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="static/images/logo.png">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                        <li class="submenu">
+                            <a href="javascript:;">寢具家飾</a>
+                            <ul>
+                                <li><a href="usacotton.html">美國純棉</a></li>
+                                <li><a href="tencellyocell.html">天絲纖維</a></li>
+                                <li><a href="pillow.html">真枕好眠</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:;">窗簾窗飾</a>
+                            <ul>
+                                <li><a href="rollscreen.html">柔絲簾</a></li>
+                                <li><a href="rollscreen2.html">調光簾</a></li>
+                                <li><a href="venetianblind.html">百葉簾</a></li>
+                                <li><a href="curtains1.html">蛇簾</a></li>
+                                <li><a href="curtains2.html">三摺簾</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:;">家具床墊</a>
+                            <ul>
+                                <li><a href="bedroom.html">實木床組</a></li>
+                            </ul>
+                        </li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!DOCTYPE html>
+
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <img src="static/images/in-1.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Sec. Area Starts ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <img src="static/images/in-2.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** sec. Area Ends ***** -->
+
+    <!-- ***** third Area Starts ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <img src="static/images/in-3.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** third Area Ends ***** -->
+
+    <!-- ***** fourth Area Starts ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <img src="static/images/in-4.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** fourth Area Ends ***** -->
+
+    <!-- ***** Inf. Area Starts ***** -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-heading">
+                        <h2>誠摯邀請您蒞臨門市，以取得專屬優惠！</h2>
+                        <span>35年在地老店</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>商家地址:<br><span>彰化縣和美鎮<br>彰美路6段169號</span></li>
+                                <li>聯絡電話:<br><span>04-7564080</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>營業時間:<br><span>11:00 AM - 08:00 PM<br>週一至週六</span></li>
+                                <li>Email:<br><span>syncoservice@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Inf. Area Ends ***** -->
+    
+    <!-- ***** Footer Start ***** -->
+    
+    
+
+    <!-- jQuery -->
+    
+
+    <!-- Bootstrap -->
+    
+    
+
+    <!-- Plugins -->
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+    
+    <!-- Global Init -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="first-item">
+                    <div class="logo">
+                        <img src="static/images/w-logo.png" alt=" ">
+                    </div>
+                    <ul>
+                        <li><a href="#">彰化縣和美鎮彰美路六段169號</a></li>
+                        <li><a href="#">syncoservice@gmail.com</a></li>
+                        <li><a href="#">04-7564080</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h4>服務項目</h4>
+                <ul>
+                    <li><a href="#">寢具、家飾</a></li>
+                    <li><a href="#">家具、床墊</a></li>
+                    <li><a href="#">窗簾、裝潢</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>欣格寢具 Line官方帳號</h4>
+                <ul>
+                    <img src="static/images/qrcode.jpg" alt="" style="width:168px; height:auto;">
+                </ul>
+            </div>
+            <div class="col-lg-12">
+                <div class="under-footer">
+                    <p>Copyright © 2025 Synco Co., Ltd. All Rights Reserved.
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS 引用 -->
+
+
+
+<!-- JS 引用 -->
+<script src="static/js/jquery-2.1.0.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script>
+  window.onload = function () {
+    var preloader = document.getElementById('preloader');
+    if (preloader) preloader.style.display = 'none';
+  };
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    navText: ["<i class='bi bi-chevron-left'></i>", "<i class='bi bi-chevron-right'></i>"],
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+  $(".owl-carousel").each(function(){
+    var owl = $(this);
+    owl.owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 3 }
+      }
+    });
+
+    // 綁定自訂按鈕
+    $("#custom-prev").click(function() {
+      owl.trigger("prev.owl.carousel");
+    });
+    $("#custom-next").click(function() {
+      owl.trigger("next.owl.carousel");
+    });
+  });
+});
+</script>
+
+</body>
+</html>

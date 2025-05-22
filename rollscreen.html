@@ -376,5 +376,14 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+  $(document).ready(function () {
+    $('.menu-trigger').on('click', function () {
+      $(this).toggleClass('active');
+      $('.main-nav ul.nav').slideToggle(200);
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -398,9 +398,18 @@ $(document).ready(function(){
 
 <script>
   $(document).ready(function () {
+    // 手機主選單
     $('.menu-trigger').on('click', function () {
       $(this).toggleClass('active');
       $('.main-nav ul.nav').slideToggle(200);
+    });
+
+    // 子選單 toggle
+    $('.submenu > a').on('click', function (e) {
+      e.preventDefault();
+      var submenu = $(this).next('ul');
+      $('.submenu ul').not(submenu).slideUp(); // 關掉其他
+      submenu.stop(true, true).slideToggle();  // 打開當前
     });
   });
 </script>
